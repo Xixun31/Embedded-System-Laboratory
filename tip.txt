@@ -1,0 +1,26 @@
+#Begin
+cd ~/EE2405/code-example
+git pull
+
+#init
+mkdir labx
+cd labx
+ln -s ../mbed-os .
+cp CMakeLists.txt
+cp mbed_app.json5
+code main.cpp
+
+#compile
+mkdir build
+cd build
+cmake .. -GNinja -DMBED_TARGET=B_L4S5I_IOT01A
+
+#build
+sudo ninja flash-MbedCEHelloWorld
+
+#monitor
+sudo microcom --port=/dev/ttyACM0 --speed=115200
+exit: Ctrl-\ -> Ctrl-C
+
+#screenshot
+gnome-screenshot -d 5
