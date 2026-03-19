@@ -16,8 +16,8 @@ cd labx
 ### 建立 Mbed OS 連結與複製必要設定
 ```
 ln -s ../mbed-os .
-cp ../CMakeLists.txt .
-cp ../mbed_app.json .
+cp ../Document/CMakeLists.txt .
+cp ../Document/mbed_app.json .
 code main.cpp
 ```
 
@@ -56,8 +56,8 @@ cd labx
 ### 建立 Mbed OS 連結與複製必要設定
 ```
 ln -s ../mbed-os .
-cp ../CMakeLists.txt .
-cp ../mbed_app.json .
+cp ../Document/CMakeLists.txt .
+cp ../Document/mbed_app.json .
 code main.cpp
 ```
 
